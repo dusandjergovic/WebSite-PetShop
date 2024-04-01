@@ -58,16 +58,19 @@ $(document).ready(function() {
       }
   });
 
+
     var services = $("#services");
     var servicesChildren = services.find(".animalServices");
+    var animated = false;
 
     $(window).scroll(function() {
         var position = services.offset().top;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
-        if (position < scroll + windowHeight) {
+        
+        if (position < scroll + windowHeight && !animated) {
             servicesChildren.each(function(index) {
-                var delay = index * 350; 
+                var delay = index * 300;
                 var element = $(this);
                 setTimeout(function() {
                     element.css({
@@ -76,6 +79,7 @@ $(document).ready(function() {
                     });
                 }, delay);
             });
+            animated = true;
         }
     });
 
