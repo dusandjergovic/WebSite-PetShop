@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
 
-      let goToTop = $("#btnGoToTop");
+    let goToTop = $("#btnGoToTop");
 
-      $(window).scroll(function() {
+    $(window).scroll(function() {
         if ($(this).scrollTop() > 20) {
             goToTop.css("display", "block");
         } else {
