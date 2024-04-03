@@ -15,6 +15,14 @@ $(document).ready(function() {
         $("html, body").animate({ scrollTop: 0 }, 'normal')
     });
 
+    $("#user").click(function() {
+        let formField = $("#popupOverlay")
+        formField.toggleClass('show')
+    }) 
+
+    $(".btn-close-popup").click(function() {
+        $("#popupOverlay").hide()
+    })
 
 
   // appendig input:search field after click on 'loop' icon

@@ -11,6 +11,8 @@
 </head>
 <body>
 
+    
+
     <button id="btnGoToTop">
         <img src="img/20.png" width="20px" alt="">
     </button>
@@ -40,12 +42,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" id="user">
                     <i class="fa fa-user"></i>
                     </a>
                 </li>
             </ul>
         </nav>
+
 
         <div id="heading">
             <span id="landingPageHeading">We are always here for all your pet's good health</span>
@@ -58,6 +61,36 @@
             </div>  
         </div>
     </div>
+
+    <div id="popupOverlay" 
+         class="overlay-container"> 
+        <div class="popup-box"> 
+            <h2 style="color: green;">Popup Form</h2> 
+            <form class="form-container"> 
+                <label class="form-label" 
+                       for="name"> 
+                  Username: 
+                  </label> 
+                <input class="form-input" type="text" 
+                       placeholder="Enter Your Username" 
+                       id="name" name="name" required> 
+  
+                <label class="form-label" for="email">Email:</label> 
+                <input class="form-input"
+                       type="email" 
+                       placeholder="Enter Your Email"
+                       id="email" 
+                       name="email" required> 
+  
+                <button class="btn-submit" 
+                        type="submit"> 
+                  Submit 
+                  </button> 
+            </form> 
+  
+            <button class="btn-close-popup">Close</button> 
+        </div> 
+    </div> 
 
     <div id="actions">
         
